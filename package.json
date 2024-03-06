@@ -1,0 +1,12 @@
+{
+  "name": "sqlalchemy-postgresql",
+  "version": "0.1.0",
+  "description": "Try SQLAlchemy with PostgreSQL",
+  "scripts": {
+    "db:up": "docker-compose up -d",
+    "db:down": "docker-compose down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
