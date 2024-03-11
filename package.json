@@ -4,7 +4,10 @@
   "description": "Try SQLAlchemy with PostgreSQL",
   "scripts": {
     "db:up": "docker-compose up -d",
-    "db:down": "docker-compose down"
+    "db:down": "docker-compose down",
+    "psql:help": "docker exec -u postgres -it mydb psql -U ${POSTGRES_USER} --help",
+    "psql:list": "docker exec -u postgres -it mydb psql -U ${POSTGRES_USER} -l",
+    "psql:exec": "docker exec -u postgres -it mydb psql -U ${POSTGRES_USER} ${POSTGRES_DB}"
   },
   "keywords": [],
   "author": "",
