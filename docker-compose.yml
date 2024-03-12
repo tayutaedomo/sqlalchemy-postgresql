@@ -14,6 +14,7 @@ services:
     volumes:
       - ./log:/var/log/example/postgresql
       - ./data/postgresql:/var/lib/postgresql/data
+      - ./sql:/tmp/sql
     ports:
       - "5432:5432"
     restart: unless-stopped

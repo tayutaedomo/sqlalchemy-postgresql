@@ -1,3 +1,5 @@
+BEGIN;
+
 INSERT INTO empsalary (depname, empno, salary) VALUES
 ('develop', 11, 5200),
 ('develop', 7, 4200),
@@ -10,3 +12,4 @@ INSERT INTO empsalary (depname, empno, salary) VALUES
 ('sales', 1, 5000),
 ('sales', 4, 4800);
 
+COMMIT;
