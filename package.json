@@ -12,7 +12,8 @@
     "psql:sql02": "docker exec -u postgres -it mydb psql -U ${POSTGRES_USER} ${POSTGRES_DB} -f /tmp/sql/02_insert_into_empsalary.sql",
     "psql:sql03": "docker exec -u postgres -it mydb psql -U ${POSTGRES_USER} ${POSTGRES_DB} -f /tmp/sql/03_create_table_time_history.sql",
     "psql:sql04": "docker exec -u postgres -it mydb psql -U ${POSTGRES_USER} ${POSTGRES_DB} -f /tmp/sql/04_insert_into_time_history.sql",
-    "py:select": "poetry run python scripts/select_empsalary.py"
+    "py:select": "poetry run python scripts/select_empsalary.py",
+    "py:select2": "poetry run python scripts/select_time_history.py"
   },
   "keywords": [],
   "author": "",
