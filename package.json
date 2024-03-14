@@ -14,7 +14,8 @@
     "psql:sql04": "docker exec -u postgres -it mydb psql -U ${POSTGRES_USER} ${POSTGRES_DB} -f /tmp/sql/04_insert_into_time_history.sql",
     "py:select": "poetry run python scripts/select_empsalary.py",
     "py:select2": "poetry run python scripts/select_time_history.py",
-    "py:rank": "poetry run python scripts/select_empsalary_rank.py"
+    "py:rank": "poetry run python scripts/select_empsalary_rank.py",
+    "py:rank2": "poetry run python scripts/select_time_history_rank.py"
   },
   "keywords": [],
   "author": "",
